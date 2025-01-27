@@ -252,96 +252,110 @@ nav ul li a:hover {
 
 
 
-/* The Quicl Box that contain Location, Date and Guests  */
 .quick-box {
   display: flex;
   background-color: #ffffff;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1), 0px -4px 12px rgba(0, 0, 0, 0.1); /* Smoother shadow on all sides */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1), 0px -4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin-bottom: 100px;
   border-radius: 12px;
   gap: 15px;
   width: 800px;
-  height: 70px;
+  height: auto;
   margin-left: 220px;
   margin-top: 50px;
   align-items: center;
   justify-content: space-between;
 }
+
 .quick-location {
   display: flex;
   flex-direction: column;
   line-height: 6px;
 }
+
 .quick-location h1 {
   font-size: 15px;
   font-weight: 400;
   color: #333;
 }
+
 .quick-location-top {
   display: flex;
   align-items: center;
   gap: 5px;
 }
+
 .quick-location-top h1 {
   font-size: 18px;
-  font-weight:600;
+  font-weight: 600;
 }
+
 .quick-location-top i {
   color: #ff7a00;
 }
+
+/* Styling for inputs and select dropdowns */
+.input-field, .select-field, .date-picker {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Button Styling */
 .quick-box button {
   background-color: #ff7a00;
   color: #fff;
-    /* padding: 12px 25px; */
-    width: 120px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    height: 45px;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-  }
+  width: 120px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 45px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
 
-  .quick-box  button:hover {
-    background-color: #333;
-  }
+.quick-box button:hover {
+  background-color: #333;
+}
 
-/* Quick Box ans Mobile/responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
   .quick-box {
-    width: 350px;
-    margin-bottom: 100px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1), 0px -4px 12px rgba(0, 0, 0, 0.1); /* Smoother shadow on all sides */
-    height: 300px;
-    display: block;
-    margin-left: 0;
-    padding: 20px 20px;
-    margin-top: 50px;
-    gap: 10px;
+      width: 360px;
+      height: auto;
+      display: block;
+      margin-left: 20px;
+      padding: 20px 20px;
+      gap: 10px;
   }
+  .input-field, .select-field, .date-picker {
+    padding: 8px;
+    width: 95%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+  }
+
   .quick-location {
-    
-    line-height: 4px;
-    margin-bottom: 20px;
+      margin-bottom: 20px;
   }
-  .quick-location-top {
-    gap: 6px;
-  }
+
   .quick-location h1 {
-    font-size: 16px;
-    font-weight: 400;
+      font-size: 16px;
   }
+
   .quick-location-top h1 {
-    font-size: 18px;
-    font-weight: 600;
+      font-size: 18px;
   }
-  .quick-location-top i {
-    font-size: 20px;
-  }
+
   .quick-box button {
-    width: 90%;
-    font-size: 16px;
+      width: 100%;
+      font-size: 16px;
   }
 }
 
@@ -777,22 +791,24 @@ background-color: white;
 
 /* Testimonial Section */
 .testimonial-section {
-    display: flex; /* Flexbox si walxaha la isugu barbar dhigo */
-    align-items: center; /* Isla sinaanta xagga sare iyo hoose */
-    justify-content: space-between; /* Meel bannaan ku filan oo dhexdooda ah */
-    padding: 50px;
-    background-color: #f9f9f9;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;     
     margin-top: 100px;
+    padding: 20px 20px;
     gap: 20px;
+    height: 400px;
+    background-color: #F7F8FC;
+    margin-bottom: 100px;
   }
   
   .testimonial-content {
-    max-width: 500px;
-    margin-bottom: 300px;
+    width: 300px;
   }
   
   .testimonial-content h2 {
     font-size: 36px;
+    line-height: 50px;
     color: #333;
     /* margin-bottom: 20px; */
   }
@@ -802,94 +818,177 @@ background-color: white;
   }
   
   .testimonial-content p {
-    font-size: 16px;
+    font-size: 14px;
     color: #666;
+    margin-top: -20px;
+    text-align: left;
     line-height: 1.6;
   }
-  
-  .testimonial-image img {
-    width: 600px; /* Ballaca sawirka */
-    height: auto; /* Si ay isugu ekaato sawirka */
-    /* border-radius: 50%; Sawir wareeg ah */
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); Hooska sawirka */
+  .TestmonialPrevNextArrows {
+    margin-top: 50px;
+    gap: 20px;
+    display: flex;
+    position: absolute;
+    margin-top: 10px;
+    justify-content: center;
   }
   
-
-
-/* Blog Section Styling */
-.blog-section {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-.header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.header .highlight {
-    color: #ff6600;
-}
-
-.blog-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.blog-card {
-    background: #fff;
+  .TestmonialPrevNextArrows #left {
+    color: #333; 
+    background-color: transparent;
+    border: 1px solid #333; 
+    border-radius: 100%;
+    width: 29px;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 29px; 
+  }
+  .TestmonialPrevNextArrows #right {
+    color: #ff6600  ;
+    font-size: 30px;
+  }  
+  .testimonial-comment {
+    width: 370px;
+    padding: 0px 30px;
+    background: white;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.blog-card:hover {
-    transform: translateY(-10px);
-}
-
-.blog-card img {
-    width: 100%;
-    height: auto;
-}
-
-.blog-card h3 {
-    font-size: 1.2rem;
-    margin: 15px;
-    color: #333;
-}
-
-.blog-card p {
-    font-size: 0.9rem;
-    color: #666;
-    margin: 0 15px 15px;
-}
-
-/* Carousel Indicators */
-.carousel-indicators {
+  }
+  .testimonial-comment p {
+    font-size: 14px;
+    text-align: left;
+    line-height: 22px;
+  }
+  .testimonial-comment h1 {
+    font-size: 14px;
+    text-align: left;
     margin-top: 20px;
+  }
+  .testimonial-comment h3 {
+    font-size: 12px;
+    text-align: left;
+    color:#777;
+    margin-top: -10px;
+    font-weight: 500;
+  }
+  .testimonial-section img {
+    position: absolute;
+    width: 130px;
+    margin-top: -230px;
+    right: 70px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .testimonial-section {
+      flex-direction: column; 
+      align-items: center;  
+      /* margin-top: 80px; */
+    }
+    .testimonial-content {
+      margin-left: -80px;
+    }
+    .testimonial-comment {
+      width: 300px;
+    }
+    .testimonial-section img {
+      position: absolute;
+      width: 100px;
+      margin-top: -300px;
+      right: 40px;
+    }
+    .TestmonialPrevNextArrows {
+      position: absolute;
+      right: 50px;
+      margin-top: -20px;
+    }
+
+  
+
+  }
+  /* End Testimonial Section  */
+
+  .BlogSection {
+
+  }
+  .AllBlog {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    /* padding: 20px 20px; */
+  }
+  .SingleBlog {
+    width: 200px;
+    height: 400px;
+  }
+  .SingleBlog img {
+    width: 100%;
+    height: 220px;
+  }
+  .BlogInfo h1 {
+    font-size: 14px;
+    text-align: left;
+    line-height: 18px;
+    color: #333;
+  }
+  .SingleBlog p {
+    font-size: 14px;
+    text-align: left;
+    line-height: 22px; 
+  }
+
+  .BlogDots {
     display: flex;
     justify-content: center;
     gap: 10px;
-}
-
-.indicator {
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+  .dotOne {
+    width: 8px;
+    height: 8px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+  }
+  .dotTwo {
     width: 10px;
     height: 10px;
-    background-color: #ddd;
+    background-color: #ff7a00;
     border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+  }
+  .dotThree {
+    width: 8px;
+    height: 8px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+  }
 
-.indicator.active {
-    background-color: #ff6600;
-}
+  @media screen and (max-width: 768px) {
+    .AllBlog {
+      flex-direction: column;
+      align-items: center;
+    }
+    .BlogSection h1 {
+      margin-bottom: 100px;
+    }
+    .BlogInfo p {
+      /* margin-bottom: 100px; */
+      margin-top: -80px;
+    }
+    .SingleBlog {
+      width: 300px;
+      margin-top: -50px;
+
+    }
+    .SingleBlog h1 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
 
 
 
@@ -899,86 +998,80 @@ background-color: white;
     text-align: center;
     padding: 50px 20px;
     position: relative;
+    height: 250px;
+    margin-top: 80px;
     overflow: hidden;
 }
 
 .subscribe-section h1 {
     font-size: 36px;
+    line-height: 50px;
     margin-bottom: 20px;
 }
 
-.subscribe-section h1 span {
-    font-weight: bold;
-}
 
-.subscribe-section .subscribe-form {
+.subscribe-form {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
 
-.subscribe-section input[type="email"] {
-    padding: 15px 20px;
+.subscribe-section input {
+    padding-left:20px;
+    height: 50px;
     border: none;
-    border-radius: 25px 0 0 25px;
-    width: 300px;
+    border-radius:10px;
+    width: 500px;
     outline: none;
+}
+.subscribe-section img {
+  position: absolute;
+  right: 10px;
+  margin-top: -30px;
 }
 
 .subscribe-section button {
-    padding: 15px 25px;
+    width: 120px;
+    height: 40px;
     border: none;
-    background-color: #fff;
-    color: #FF7033;
+    background-color: #FF7033;
+    color: #ffff;
     font-size: 16px;
-    font-weight: bold;
-    border-radius: 0 25px 25px 0;
+    font-weight: 500;
+    border-radius: 8px;
     cursor: pointer;
+    /* position: inherit; */
+    margin-left: -128px;
     transition: background-color 0.3s ease;
 }
 
 .subscribe-section button:hover {
-    background-color: #FFC2A1;
+    background-color: #333;
 }
 
-.subscribe-section .graphics {
-    position: absolute;
-    top: 50%;
-    left: -100px;
-    transform: translateY(-50%);
-    z-index: 0;
+@media screen and (max-width: 768px) {
+  .subscribe-section {
+    height: 200px;
+  }
+  .subscribe-section h1 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .subscribe-section input {
+    width: 350px;
+    margin-top: 20px;
+  }
+  .subscribe-section button {
+    margin-left: -127px;
+    margin-top: 20px;
+  }
+  
 }
 
-.subscribe-section .graphics img {
-    max-width: 100px;
-    opacity: 0.5;
-}
-
-.subscribe-section .graphics.palms {
-    top: 10%;
-    right: 20px;
-    left: unset;
-    transform: none;
-}
-
-.subscribe-section .overlay-circles {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(255,255,255,0.3) 10%, transparent 70%);
-    border-radius: 50%;
-    z-index: 0;
-}
 
 /* General Styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
 
 .footer {
     background-color: #f9f9f9;

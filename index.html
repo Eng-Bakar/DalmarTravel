@@ -49,31 +49,57 @@
 
     <!-- search-section -->
     <!-- Quick Booking Section -->
+        <div>
         <div class="quick-box">
+            <!-- Location Dropdown -->
             <div class="quick-location">
                 <div class="quick-location-top">
                     <h1> Location</h1>
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
-                <h1> Where are you going </h1>
+                <!-- <h1> Where are you going </h1> -->
+                <input list="locations" class="input-field" placeholder="Select location">
+                <datalist id="locations">
+                    <option value="Garowe">
+                    <option value="Mogadishu">
+                    <option value="Hargeisa">
+                    <option value="Kismayo">
+                    <option value="Burco">
+                    <option value="Bosaso">
+                    <option value="Gedo">
+                </datalist>
             </div>
+
+            <!-- Date Picker -->
             <div class="quick-location">
                 <div class="quick-location-top">
                     <h1> Date</h1>
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
-                <h1> When you will go </h1>
+                <!-- <h1> When you will go </h1> -->
+                <input type="date" class="date-picker">
             </div>
+
+            <!-- Guest Number Dropdown -->
             <div class="quick-location">
                 <div class="quick-location-top">
                     <h1> Guest</h1>
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
-                <h1> Number of guest </h1>
+                <!-- <h1> Number of guests </h1> -->
+                <input list="guests" class="input-field" type="number" placeholder="Select/Guest Number ">
+                <datalist id="guests">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                </datalist>
             </div>
-            
+
             <button>Explore Now</button>
         </div>
+    </div>
 
     <section class="things-section">
         <div class="things-header">
@@ -305,95 +331,85 @@
         </div>
 
     </div>
-    <!-- <div class="navigation">
-        <button id="left">&larr;</button>
-        <button id="right">&rarr;</button>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <img id="image-1" src="./images/Image (7).png" alt="Rome, Italy">
-            <div class="card-content">
-                <h3 id="title-1">Rome, Italy</h3>
-                <p id="details-1" class="details">10 Days Trip</p>
-                <p id="price-1" class="price">$5,42k</p>
-                <p id="rating-1" class="rating">&#9733; 4.8</p>
-            </div>
-        </div>
-        <div class="card">
-            <img id="image-2" src="./images/Image (3).png" alt="London, UK">
-            <div class="card-content">
-                <h3 id="title-2">London, UK</h3>
-                <p id="details-2" class="details">7 Days Trip</p>
-                <p id="price-2" class="price">$2,42k</p>
-                <p id="rating-2" class="rating">&#9733; 4.7</p>
-            </div>
-        </div>
-        <div class="card">
-            <img id="image-3" src="./images/Image (4).png" alt="Paris, France">
-            <div class="card-content">
-                <h3 id="title-3">Paris, France</h3>
-                <p id="details-3" class="details">5 Days Trip</p>
-                <p id="price-3" class="price">$3,12k</p>
-                <p id="rating-3" class="rating">&#9733; 4.6</p>
-            </div>
-        </div>
-    </div> -->
-    
-    
-
-
+  
 
     <div class="testimonial-section">
         <div class="testimonial-content">
           <h2>What people say <span>about us</span>.</h2>
           <p>Our clients send us a bunch of smiles with our services and we love them.</p>
-         
+          <div class="TestmonialPrevNextArrows">
+            <i id="left" class="fa-solid fa-arrow-left"></i>
+            <i id="right" class="fa-solid fa-circle-arrow-right"></i>
+          </div>
         </div>
-        
-      
-        <div class="testimonial-image">
-          <img src="./images/Client-1.png" alt="Client Image">
+        <img src="./Images/TestmonialPlanes.png" alt="">
+        <div class="testimonial-comment">
+            <p> “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
+            <h1> Maria Ibrahim </h1>
+            <h3> Saudia, Arabia </h3>
         </div>
         
       </div>
 
 
-      <div class="blog-section">
-        <div class="blog-container">
-            <div class="blog-card">
-                <img src="./images/Image (4).png" alt="Blog Image 1">
-                <h3>The Amazing Difference a Year of Travelling</h3>
-                <p>July 27, 2021</p>
+      <!-- Blog Section  -->
+       <div class="BlogSection">
+        <h1> Get update with <span>latest blog</span> </h1>
+        <div class="AllBlog">
+            
+            <!-- Blog One -->
+            <div class="SingleBlog">
+                <img src="Images/BlogImage 1.png" alt="">
+                <div class="BlogInfo">
+                    <h1> The Amazing Difference a Year of Travelling . </h1>
+                    <p> Jan 05,2025</p>
+                </div>
             </div>
-            <div class="blog-card">
-                <img src="./Images/Group (2).png" alt="Blog Image 2">
-                <h3>Travel far enough, you meet yourself</h3>
-                <p>July 27, 2021</p>
+
+            <!-- Blog Two -->
+            <div class="SingleBlog">
+                <img src="Images/BlogImage 2.png" alt="">
+                <div class="BlogInfo">
+                    <h1> The Amazing Difference a Year of Travelling . </h1>
+                    <p> Jan 01,2025</p>
+                </div>
             </div>
-            <div class="blog-card">
-                <img src="./Images/Group (1).png" alt="Blog Image 3">
-                <h3>How to Save Money While Visiting Africa</h3>
-                <p>July 27, 2021</p>
+
+            <!-- Blog Three -->
+            <div class="SingleBlog">
+                <img src="Images/BlogImage 3.png" alt="">
+                <div class="BlogInfo">
+                    <h1> The Amazing Difference a Year of Travelling . </h1>
+                    <p> Jan 15,2025</p>
+                </div>
+            </div>
+
+            <!-- Blog Four -->
+            <div class="SingleBlog">
+                <img src="Images/BlogImage 4.png" alt="">
+                <div class="BlogInfo">
+                    <h1> The Amazing Difference a Year of Travelling . </h1>
+                    <p> Jan 20,2025</p>
+                </div>
             </div>
         </div>
-        <div class="carousel-indicators">
-            <span class="indicator active" data-index="0"></span>
-            <span class="indicator" data-index="1"></span>
-            <span class="indicator" data-index="2"></span>
+        <div class="BlogDots">
+            <div class="dotOne"></div>
+            <div class="dotTwo"></div>
+            <div class="dotThree"></div>
         </div>
-    </div>
+       </div>
     
 
 
-    <section class="subscribe-section">
-        <div class="subscribe-content">
+        <div class="subscribe-section">
+            <img src="./Images/SubscribeTree.png" alt="">
             <h1>Subscribe and get exclusive <br> deals & offer</h1>
             <form class="subscribe-form">
                 <input type="email" placeholder="Enter your mail" required>
                 <button type="submit">Subscribe</button>
             </form>
         </div>
-    </section>
 
 
     <footer class="footer">
